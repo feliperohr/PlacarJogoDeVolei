@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.MainUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="895" height="470"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="bfbdb" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="0" bottom="10" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="6edf5" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="20" style="1"/>
+              <text value="Partida de Volei"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="4933" layout-manager="GridLayoutManager" row-count="3" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="20" bottom="10" right="20"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="62fc7" class="javax.swing.JLabel" binding="time1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="16"/>
+              <text value="Time 1 (Home)"/>
+            </properties>
+          </component>
+          <component id="34ff" class="javax.swing.JLabel" binding="time2">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="16"/>
+              <text value="Time 2 (Visitor)"/>
+            </properties>
+          </component>
+          <component id="c4ef5" class="javax.swing.JButton" binding="adicionarPontosTime1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <focusPainted value="false"/>
+              <font size="18"/>
+              <text value="+"/>
+            </properties>
+          </component>
+          <component id="835ab" class="javax.swing.JButton" binding="adicionarPontosTime2">
+            <constraints>
+              <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <focusPainted value="false"/>
+              <font size="18"/>
+              <text value="+"/>
+            </properties>
+          </component>
+          <hspacer id="a8da3">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="80f44" class="javax.swing.JTextField" binding="placarTime1">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="70" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <enabled value="true"/>
+              <font size="20"/>
+              <horizontalAlignment value="0"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="c64a2" class="javax.swing.JTextField" binding="placarTime2">
+            <constraints>
+              <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="70" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <enabled value="true"/>
+              <font size="20"/>
+              <horizontalAlignment value="0"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <grid id="e2a45" binding="panelSetsTime1" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="56a88" class="javax.swing.JCheckBox" binding="set1Time1">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="5bc5b" class="javax.swing.JCheckBox" binding="set2Time1">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="61eac" class="javax.swing.JCheckBox" binding="set3Time1">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="269b7" binding="panelSetsTime2" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7b822" class="javax.swing.JCheckBox" binding="set1Time2">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="de59c" class="javax.swing.JCheckBox" binding="set2Time2">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="eac5d" class="javax.swing.JCheckBox" binding="set3Time2">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="a206d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="18" style="0"/>
+              <text value="Set: "/>
+            </properties>
+          </component>
+          <component id="1c1ed" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="18" style="0"/>
+              <text value="Set: "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="281c2" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="20" left="120" bottom="35" right="120"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="20"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d89f9" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="16"/>
+              <text value="X"/>
+            </properties>
+          </component>
+          <component id="5b426" class="javax.swing.JLabel" binding="placarGeralTime2">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="20"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="8d641" class="javax.swing.JLabel" binding="placarGeralTime1">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="20"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="b0dff" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="18" style="0"/>
+              <text value="Placar geral"/>
+            </properties>
+          </component>
+          <component id="c7eac" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="16"/>
+              <text value="Time 1 (Home)"/>
+            </properties>
+          </component>
+          <component id="19afc" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Roboto Light" size="16"/>
+              <text value="Time 2 (Visitor)"/>
+            </properties>
+          </component>
+          <grid id="b2606" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7dfcd" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <font name="Roboto Light" size="18" style="0"/>
+                  <text value="Set: "/>
+                </properties>
+              </component>
+              <component id="dd75b" class="javax.swing.JLabel" binding="contadorSet">
+                <constraints/>
+                <properties>
+                  <font name="Roboto Light" size="18" style="0"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
